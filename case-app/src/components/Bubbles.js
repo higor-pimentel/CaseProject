@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableWithoutFeedback } from 'react-native';
 
-export default function BubblesComponent({ navigation }) {
+export default function BubblesComponent({ navigation, emoticon }) {
     return (
         <TouchableWithoutFeedback onPress={() => navigation.navigate('Feeling')}>
             <View style={styles.bubble}>

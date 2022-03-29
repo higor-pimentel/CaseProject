@@ -4,20 +4,16 @@ import BubblesComponent from '../components/Bubbles';
 
 export default function EmojisPage({ navigation }) {
 
+    const emoticons = ['128512', '128513', '128516', '128518'];
+
     return (
         <>
             <ScrollView style={styles.scroll}>
                 <View style={styles.container}>
                     {
-                        () => {
-                            let emotions = [];
-                            for (let i = 128512; i < 128567; i++) {
-
-                                emotions.push(<BubblesComponent style={styles.bubble} navigation={navigation} emoticon={i} />)
-                            };
-                            return emotions;
-                        }
+                        emoticons.map(emoji => <BubblesComponent key={emoji} style={styles.bubble} navigation={navigation} emoticon={emoji} />)
                     }
+
 
                 </View>
             </ScrollView>
