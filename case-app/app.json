@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "case-app",
+    "slug": "case-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
